@@ -1,0 +1,4 @@
+statefulset:
+  replicas: 1
+  imageRepo: ramdocker22/mongodb
+  imageVersion: 4.0.0
