@@ -1,0 +1,7 @@
+configmap:
+  mongodbUrl: "mongodb://mongodb:27017/catalogue"
+deployment:
+  imageRepo: ramdocker22/catalogue
+  imageVersion: 4.0.0
+hpa:
+  cpuPercentage: 80
