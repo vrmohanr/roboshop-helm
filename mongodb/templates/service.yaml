@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: mongodb-headless
-  namespace: roboshop
+  namespace: {{ .Release.Namespace }}
   labels:
     project: roboshop
     component: mongodb
@@ -22,7 +22,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: mongodb
-  namespace: roboshop
+  namespace: {{ .Release.Namespace }}
   labels:
     project: roboshop
     component: mongodb

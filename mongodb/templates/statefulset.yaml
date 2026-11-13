@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: StatefulSet
 metadata:
   name: mongodb
-  namespace: roboshop
+  namespace: {{ .Release.Namespace }}
   labels:
     project: roboshop
     component: mongodb
