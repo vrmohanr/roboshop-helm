@@ -3,7 +3,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: catalogue
-  namespace: roboshop
+  namespace: {{ .Release.Namespace }}
   # labels related to deployment resource
   labels:
     project: roboshop
